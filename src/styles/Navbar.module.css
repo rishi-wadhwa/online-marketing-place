@@ -1,0 +1,140 @@
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 200px;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#navs {
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.3rem;
+    height: 100%;
+    align-items: center;
+}
+.hover_button:hover, .hover_button:hover *{
+    color: rgb(184, 184, 184);
+    fill: rgb(184, 184, 184);
+}
+#cart_logo_svg{
+    width: 29px !important;
+    height: 25px !important;
+    fill: #ffff;
+}
+#cart_logo_g{
+    transform: scale(0.017);
+}
+.signin, .username {
+    margin-right:40px;
+    height: 100%;
+    cursor: pointer;
+}
+.signin:hover div, .username:hover div{
+    display: block;
+    opacity: 100%;
+}
+
+
+
+
+.search_container{
+    width: 40%
+}
+
+.search_container form {
+    display: flex;
+    justify-content: row;
+}
+
+.search_container input{
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 100%;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    padding:0 8px;
+}
+
+.search_container button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #4DC4CA;
+    color: #ffff;
+    height: 32px;
+    border: none;
+    width: 100%;
+    padding:0 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#navbar {
+    background-color: #313132;
+    color: #ffff;
+    height: 65px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+
+    /* responsive */
+
+
+@media screen and (max-width:800px) {
+    #navbar{
+        flex-wrap: wrap;
+        height: 100px;
+    }
+    .search_container{
+        width: 100%;
+    }
+    #navs{
+        position:absolute;
+        right: 10px;
+        top: 6px;
+        height: min-content;
+    }
+    .signin{
+        margin-right: 25px !important;
+    }
+    #logo{
+        position: relative;
+        top: 6px;
+    }
+    #logo img {
+        width: 185px;
+    }
+}
+
+@media screen and (max-width:530px){
+    #newAccount{
+        font-size: 0.9rem !important;
+    }
+    #newAccountSignIN{
+        font-size: 0.8rem !important;
+    }
+    #logo img {
+        width: 150px;
+    }
+    .signin{
+        margin-right: 15px !important;
+    }
+    #Cart{
+        font-size: 0.9rem !important;
+    }
+    #cart_logo_g{
+        transform: scale(0.014) !important;
+    }
+    #cart_logo_svg{
+        width: 25px !important;
+        height: 21px !important;
+        fill: #ffff;
+    }
+}

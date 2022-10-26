@@ -1,0 +1,24 @@
+.Drop_Down_Container{
+    position:absolute;
+    background-color: #313132;
+    width: max-content;
+    height: max-content;
+    border-radius:0px 0px 8px 8px;
+    opacity: 0%;
+    transition:opacity 1s ease;
+}
+.Drop_Down_Button{
+    display: none;
+    padding: 0.6rem 1rem;
+}
+.Drop_Down_Button:last-child{
+    border-radius:0px 0px 8px 8px;
+}
+.Drop_Down_Button:hover{
+    background-color: #3a3a3b;
+}
+.link {
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.1rem;
+}
